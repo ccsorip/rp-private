@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="private" author="true" classpath="/Users/constanzacsori/.m2/repository/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1.jar:/Users/constanzacsori/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Users/constanzacsori/.m2/repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar:/Users/constanzacsori/.m2/repository/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1.jar" destdir="doc" doctitle="Java Beacon Random Utility API" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="cl.clcert.rp" source="9" sourcepath="src" splitindex="true" use="true" version="true"/>
+    </target>
+</project>
