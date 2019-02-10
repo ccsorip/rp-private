@@ -69,6 +69,7 @@ public class HPAKErangeProof {
         BigInteger N = commitment.getGroup().getN();
         BigInteger g = commitment.getGroup().getG();
         BigInteger h = commitment.getGroup().getH();
+        // Integer value of the commitment, not the object, bigint value.
         BigInteger c = commitment.getCommitmentValue();
 
         BigInteger a = range.getStart();
@@ -126,7 +127,7 @@ public class HPAKErangeProof {
     }
 
     public static void validateRangeProof(RangeProof proof, Commitment commitment, ClosedRange range) {
-
+    	
         // Commitment
         BigInteger N = commitment.getGroup().getN();
         BigInteger g = commitment.getGroup().getG();
@@ -194,6 +195,9 @@ public class HPAKErangeProof {
             throw new ZeroKnowledgeException("Crypto Exception at check (12)");
         }
     }
+    
+    
+    
 
     // Randomly choose m1, m2, m4 smaller than (non-negative) sum, such that m1 + m2 + m4^2 = sum
     static BigInteger[] takeRandomM(BigInteger sum) {
